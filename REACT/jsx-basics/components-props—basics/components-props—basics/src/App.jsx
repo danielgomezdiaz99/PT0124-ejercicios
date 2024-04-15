@@ -5,7 +5,6 @@ function App() {
   const title = "Los mejores gatos";
   const subtitle1 = "¡Aquí puedes descubrir todo sobre tu amigo peludo";
   const subtitle2 = "Regalos para gatos";
-  const subtitle3 = "Coaching Sistémico Felino";
   const src = gato
   const alt="image"
   const height = "250px"
