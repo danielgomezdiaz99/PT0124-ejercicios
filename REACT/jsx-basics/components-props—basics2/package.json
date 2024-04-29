@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "components-props-basics": "file:components-props—basics",
+    "vite": "^5.2.10"
+  }
+}
