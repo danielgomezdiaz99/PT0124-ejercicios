@@ -1,0 +1,9 @@
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #4CAF50; /* Color verde consistente con el header */
+    color: white;
+    border-top: 3px solid #388E3C; /* Borde superior */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}

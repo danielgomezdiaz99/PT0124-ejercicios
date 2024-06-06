@@ -1,0 +1,40 @@
+.myArticle {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+}
+
+.myArticle .cabezera-article h3 {
+  margin: 0;
+}
+
+.myArticle a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.myArticle img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.myArticle .pie-noticia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.myArticle .delete-icon,
+.myArticle .edit-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  color: #333;
+}
+
+.myArticle .edit-icon {
+  color: #007bff;
+}

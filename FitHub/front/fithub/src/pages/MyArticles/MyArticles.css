@@ -1,0 +1,8 @@
+.articles {
+  width: 80%;
+}
+
+.articles .cabecera-articles {
+  display: flex;
+  justify-content: center;
+}

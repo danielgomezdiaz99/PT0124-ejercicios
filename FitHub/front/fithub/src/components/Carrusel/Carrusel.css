@@ -1,0 +1,39 @@
+
+.carousel-container {
+    width: 90%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    overflow: hidden; 
+}
+
+.carousel-image {
+    display: block;
+    width: 100%;
+    object-fit: cover; 
+    max-height: 60vh; 
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; 
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slick-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.slick-prev {
+    left: 10px; 
+}
+
+.slick-next {
+    right: 10px; 
+}

@@ -1,0 +1,123 @@
+/* Estilos generales del navegador */
+.navbar {
+  width: 100%;
+  background-color: #2f7a67;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: #d0ff81;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del menú */
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Icono del menú móvil */
+.mobile-menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #000; /* Color negro para el icono */
+}
+
+/* Estilos del menú */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links:hover {
+  background-color: #333;
+  color: #d0ff81;
+  border-radius: 4px;
+}
+
+/* Estilos del submenú */
+.has-submenu .nav-links {
+  cursor: pointer;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #d0ff81;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  z-index: 10; /* Asegura que el submenú se superponga al contenido */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sub-menu.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-sub-item {
+  width: 100%;
+}
+
+.nav-sub-item .nav-links {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .nav-container {
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .nav-menu.active {
+    max-height: 300px; /* Ajusta según el número de elementos en el menú */
+    opacity: 1;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+}

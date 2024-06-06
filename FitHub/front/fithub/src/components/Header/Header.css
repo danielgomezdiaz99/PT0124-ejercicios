@@ -1,0 +1,77 @@
+header {
+    min-height: 10vh;
+    width: 100%;
+    background-color: #2f7a67; /* Color de fondo más oscuro para un contraste agradable */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #4CAF50; /* Color verde agradable */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-bottom: 3px solid #388E3C; /* Borde inferior */
+}
+
+.titleContainer {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.logo-cabecera {
+    max-height: 60px;
+    vertical-align: middle;
+}
+
+.user {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.iconNav, .iconLogout, .profileCircle, .iconDashBoard {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.iconNav {
+    cursor: pointer;
+}
+
+.iconNav:hover, .iconLogout:hover, .profileCircle:hover, .iconDashBoard:hover {
+    transform: scale(1.1);
+    border-color: #FFF;
+}
+
+.iconNav.home {
+    transform: scale(1.2);
+}
+
+.iconLogout {
+    transform: scale(0.8);
+    border: 7px solid black;
+}
+
+.profileCircle {
+    border: 6px solid black;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titleContainer {
+        margin-bottom: 10px;
+    }
+}
