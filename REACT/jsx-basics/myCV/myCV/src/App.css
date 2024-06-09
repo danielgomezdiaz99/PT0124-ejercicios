@@ -1,0 +1,19 @@
+.app-container {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #f0f2f5, #d0d4d8);
+  color: black;
+}
+
+.buttons-container {
+  margin: 20px 0;
+}
+
+.custom-btn {
+  margin: 0 10px;
+}
+
+.content-container {
+  margin: 20px 0;
+}
